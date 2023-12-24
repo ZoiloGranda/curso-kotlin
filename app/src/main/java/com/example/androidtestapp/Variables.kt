@@ -12,6 +12,16 @@ fun main() {
     val charExample:Char ='Z'
     val charExample1:Char ='?'
     val stringExample: String = "zoilo granda"
+    val stringExample2: String = "AAAAA"
+    val stringExample3: String = "BBBBB"
     val booleanExample: Boolean = false
-    print(charExample)
+    println(age + age2)
+    println(age - age2)
+    println(age + example)
+    var exampleSuma = age + example.toInt()
+    println(exampleSuma)
+    println(stringExample2+stringExample3)
+    var stringConcatenada = "Hola me llamo $stringExample"
+    println(stringConcatenada)
+
 }
