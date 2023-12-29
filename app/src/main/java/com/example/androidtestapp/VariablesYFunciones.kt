@@ -5,7 +5,7 @@ fun main() {
     showMyAge(currentAge = 33)
     add(firstNumber = 25, secondNumber = 25)
     showMyName(name = "Zoilo Granda")
-    val myResta = restar(firstNumber = 10, secondNumber = 5)
+    val myResta = restarCool(firstNumber = 10, secondNumber = 5)
     println(myResta)
     val charExample:Char ='Z'
     val charExample1:Char ='?'
@@ -17,7 +17,7 @@ fun main() {
     println(stringConcatenada)
 }
 
-fun showMyName(name:String){
+fun showMyName(name:String = "Juan"){
     println("my name is $name")
 }
 
@@ -28,6 +28,8 @@ fun add(firstNumber: Int, secondNumber:Int){
 fun restar(firstNumber: Int, secondNumber: Int):Int{
     return firstNumber - secondNumber
 }
+
+fun restarCool(firstNumber: Int, secondNumber: Int):Int = firstNumber - secondNumber
 
 fun showMyAge(currentAge:Int){
     println("Tengo $currentAge años")
