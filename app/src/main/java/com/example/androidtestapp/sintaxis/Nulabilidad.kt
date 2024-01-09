@@ -1,4 +1,4 @@
-package com.example.androidtestapp
+package com.example.androidtestapp.sintaxis
 
 fun main(){
     var name: String? = "zoilo"
