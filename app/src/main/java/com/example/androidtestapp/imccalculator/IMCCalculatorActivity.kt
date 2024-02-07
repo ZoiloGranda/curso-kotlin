@@ -96,14 +96,14 @@ class IMCCalculatorActivity : AppCompatActivity() {
 
     private fun navigateToResult(result: Double) {
         val intent = Intent(this, ResultIMCActivity::class.java)
-        intent.putExtra("IMC_KEY", result)
+        intent.putExtra(IMC_KEY, result)
+        startActivity(intent)
     }
 
     private fun calculateIMC(): Double {
         val df = DecimalFormat("#.##")
         val imc = currentWeight / (currentHeight.toDouble() / 100 * currentHeight.toDouble() / 100)
         return df.format(imc).toDouble()
-
     }
 
     private fun setWeight() {
